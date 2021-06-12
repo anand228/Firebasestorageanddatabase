@@ -7,4 +7,102 @@
     tools:context=".MainActivity">
 
 
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="258dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="287dp"
+            android:layout_height="match_parent"
+            android:contentDescription="add photo"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="-4dp" />
+
+        <Button
+            android:id="@+id/buttonbrowse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="Browse"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689">
+
+        <EditText
+            android:id="@+id/Rollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="number"
+            android:ems="12"
+            android:hint="Roll no..."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="name"
+            android:ems="12"
+            android:hint="Name..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="name"
+            android:ems="12"
+            android:hint="Course..."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/contactno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="name"
+            android:ems="12"
+            android:hint="Contact..."
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonsingup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.27" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
